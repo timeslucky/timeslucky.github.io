@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://timeslucky.github.io</id>
     <title>timeslucky</title>
-    <updated>2021-04-07T14:27:51.023Z</updated>
+    <updated>2021-04-07T14:29:54.703Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://timeslucky.github.io"/>
     <link rel="self" href="https://timeslucky.github.io/atom.xml"/>
@@ -10,6 +10,21 @@
     <logo>https://timeslucky.github.io/images/avatar.png</logo>
     <icon>https://timeslucky.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, timeslucky</rights>
+    <entry>
+        <title type="html"><![CDATA[体验]]></title>
+        <id>https://timeslucky.github.io/post/ti-yan/</id>
+        <link href="https://timeslucky.github.io/post/ti-yan/">
+        </link>
+        <updated>2021-04-07T14:28:01.000Z</updated>
+        <content type="html"><![CDATA[<p>使用MacBook Air的体会：<br>
+流畅清晰，人性化体验，UI颜值恰当。<br>
+磁盘空间不足：相关大文件，缓存和日志。通过终端命令。<br>
+du -sh *   cd library/  du -d 1 -h      command + 调整字体大小  password直接输入密码<br>
+采用cleaner one分析磁盘空间，注意不同用户<br>
+Chear my mac收费，腾讯柠檬一键清理/重复文件<br>
+最好的，通过命令文件进行控制，偏好设置，实用工具</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://timeslucky.github.io/post/hello-gridea/</id>
