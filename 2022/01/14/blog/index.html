@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Cactus World">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://hiourai.com/img/nitian.png">
+    <meta property="twitter:image" content="https://hiourai.com/img/nitian.png" />
+    
+
+    
+    <meta name="title" content="Mac下使用Hugo&#43;Github Pages搭建个人博客-Cactus World" />
+    <meta property="og:title" content="Mac下使用Hugo&#43;Github Pages搭建个人博客-Cactus World" />
+    <meta property="twitter:title" content="Mac下使用Hugo&#43;Github Pages搭建个人博客-Cactus World" />
+    
+
+    
+    <meta name="description" content=" ">
+    <meta property="og:description" content=" " />
+    <meta property="twitter:description" content=" " />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="刘鹏, liupeng, Liupeng, , 刘鹏的网络日志, 刘鹏的博客, Liupeng Blog,Cactus World, 博客, 个人网站, 互联网,  ">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Mac下使用Hugo&#43;Github Pages搭建个人博客-Cactus World-刘鹏的博客 | Liupeng Blog</title>
+
+    <link rel="canonical" href="/2022/01/14/blog/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" type="text/css">
+
+    
+    
+
+    
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Cactus World</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="/categories/tech">tech</a>
+                        </li>
+                        
+                    
+                    
+		    
+                        <li><a href="/top/books/">BOOKS</a></li>
+                    
+                        <li><a href="/top/archive/">ARCHIVE</a></li>
+                    
+                        <li><a href="/top/about/">ABOUT</a></li>
+                    
+
+                    
+		    <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/space.jpeg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                    </div>
+                    <h1>Mac下使用Hugo&#43;Github Pages搭建个人博客-Cactus World</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                     &#34;刘鹏&#34;
+                             
+                            on 
+                            Friday, January 14, 2022
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <h3 id="mac下使用hugogithub-pages搭建个人博客-cactus-world">Mac下使用Hugo+Github Pages搭建个人博客-Cactus World</h3>
+<h4 id="前言">前言</h4>
+<p>为什么搭建博客呢？一方面是为了在互联网大地上有自己的住所，可以在里面自由建筑、修改和生活；另一方面自己喜欢总结和写作，用文字和图片记录生活感悟，梳理思考过程和知识点。</p>
+<p>之前遇到不懂的地方，在网上搜，前辈的博客对我的帮助很大。“山重水复疑无路，柳暗花明又一村”这种恍然大悟、茅塞顿开的感觉真得痛快！我也可以把自己在学习中遇到的问题和心得感悟用博客的方式记录下来，分享给大家。同时这种方式也可以促进我更深入地思考，更好地学习。</p>
+<h4 id="本地部署">本地部署</h4>
+<h5 id="安装go">安装Go</h5>
+<p>从<a href="https://go.dev/dl/">官网</a>上下载二进制文件，选择适合的版本，并设置系统环境变量。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#39;export PATH=$PATH:/usr/local/go/bin&#39;</span>&gt;&gt; ~/.zshrc
+$ <span style="color:#8be9fd;font-style:italic">source</span> ~/.zshrc
+$ go version
+go version go1.17.5 darwin/amd64
+</code></pre></div><h5 id="安装hugo">安装Hugo</h5>
+<p>Mac下直接使用 <code>Homebrew</code> 安装：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ brew install hugo
+
+<span style="color:#6272a4"># 检查是否安装成功</span>
+$ hugo version                                                                    
+hugo v0.88.1+extended darwin/amd64 <span style="color:#8be9fd;font-style:italic">BuildDate</span><span style="color:#ff79c6">=</span>unknown
+</code></pre></div><h5 id="生成站点">生成站点</h5>
+<p>使用Hugo快速生成站点,可以配置到自己想要的路径<code>hugo new site sitepath</code>。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ hugo new site myblog     
+
+<span style="color:#6272a4"># 查看目录结构</span>
+$ tree myblog
+myblog
+├── archetypes
+│   └── default.md
+├── config.toml    
+├── content       
+├── data
+├── layouts
+├── static         
+└── themes        
+</code></pre></div><p><code>archetypes</code>默认文章模版。</p>
+<p><code>config.toml</code>是博客的配置文件，通常在安装好想要的博客主题后修改。</p>
+<p><code>content</code>存放文章目录，里面可以查看自己的博文。</p>
+<p><code>theme</code>用来放置博客主题，主题可以从 <a href="https://themes.gohugo.io/">themes.gohugo.io</a> 下载。</p>
+<h5 id="下载主题">下载主题</h5>
+<p>Hugo提供了很多主题供你挑选，有选择综合症的难选啊。当时我先选出我自己比较喜欢的几个主题，再从这几个主题中艰难地选择。难选，是真的难选。每个主题有自己的不足和优点之处，看日后自己慢慢修改吧。</p>
+<p>最后选择<a href="https://themes.gohugo.io/themes/hugo-theme-cleanwhite/">Clean White Theme</a>,主题看起来很舒服，配置文件也详细，这里不多介绍。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ <span style="color:#8be9fd;font-style:italic">cd</span> themes
+$ git clone https://github.com/zhaohuabing/hugo-theme-cleanwhite.git
+</code></pre></div><p>如果你的站点已经是一个<code>git</code>项目，那么你可以选择添加<code>cleanwhite</code>主题作为子模块，以避免弄乱你现有的<code>git</code> 仓库。<code>git submodule</code>的具体作用看这里<a href="https://segmentfault.com/a/1190000003076028">使用Git Submodule管理子模块</a>。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ git submodule add https://github.com/zhaohuabing/hugo-theme-cleanwhite.git themes/hugo-theme-cleanwhite
+</code></pre></div><p>下载完后，可以将themes里面的<code>archetypes</code>、<code>layouts</code>、<code>static</code>文件拷贝到站点目录，覆盖原有的站点目录即可。</p>
+<p><code>config.toml</code>非常有用，可以快乐地自定义网站，根据需求修改配置。不熟悉地话，可以先默认，后面慢慢边修改配置边折腾网站。</p>
+<h5 id="创建文章">创建文章</h5>
+<p>添加<code>blog.md</code>页面，执行<code>new</code>命令。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ hugo new blog.md
+</code></pre></div><blockquote>
+<p>如果你下载了我推荐的主题，将<code>themes</code>里面的<code>archetypes</code>覆盖了原有的站点目录，并将<code>archetypes</code>里面的文件改为<code>default.md</code>。</p>
+</blockquote>
+<p><code>blog.md</code>会添加到目录<code>content</code>下，打开<code>/content/blog.md</code>，可以设置相关信息。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">  <span style="color:#bd93f9">1</span> ---                                                                                                                                  
+  <span style="color:#bd93f9">2</span> title:       <span style="color:#f1fa8c">&#34;An Example Post&#34;</span>
+  <span style="color:#bd93f9">3</span> subtitle:    <span style="color:#f1fa8c">&#34;&#34;</span>
+  <span style="color:#bd93f9">4</span> description: <span style="color:#f1fa8c">&#34;&#34;</span>
+  <span style="color:#bd93f9">5</span> date:        2018-06-04
+  <span style="color:#bd93f9">6</span> author:      <span style="color:#f1fa8c">&#34;&#34;</span>
+  <span style="color:#bd93f9">7</span> image:       <span style="color:#f1fa8c">&#34;&#34;</span>
+  <span style="color:#bd93f9">8</span> tags:        <span style="color:#ff79c6">[</span><span style="color:#f1fa8c">&#34;tag1&#34;</span>, <span style="color:#f1fa8c">&#34;tag2&#34;</span><span style="color:#ff79c6">]</span>
+  <span style="color:#bd93f9">9</span> categories:  <span style="color:#ff79c6">[</span><span style="color:#f1fa8c">&#34;Tech&#34;</span> <span style="color:#ff79c6">]</span>
+ <span style="color:#bd93f9">10</span> ---
+</code></pre></div><h5 id="本地部署-1">本地部署</h5>
+<p>编辑好文章后，想在本地部署或查看效果。</p>
+<p>在站点根目录执行<code>hugo server</code>命令。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ hugo server
+</code></pre></div><p>部署完成后，在浏览器里打开http://localhost:1313 ,可以预览效果。</p>
+<h4 id="部署到-github-pages-上">部署到 <code>Github Pages</code> 上</h4>
+<h5 id="生成静态文件">生成静态文件</h5>
+<p>编辑文章后，本地预览效果满意。如果你想部署到外网上，想让别人也能看到你的博客，那么就需要生成静态文件。</p>
+<p>直接执行</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"> $ hugo
+</code></pre></div><p>如果一切顺利，所有静态页面都会生成到 <code>public</code> 目录。</p>
+<p><code>public</code> 目录下的<code>index.html</code>可以查看静态文件。</p>
+<h5 id="新建仓库">新建仓库</h5>
+<p>点击新建仓库，配置相关信息即可。</p>
+<p><!-- raw HTML omitted --></p>
+<p>注意路径与用户名相同，因为我之前已经新建过这个仓库，所以出现❗️提示。仓库要公开，选public，后面的默认即可。</p>
+<h5 id="推送">推送</h5>
+<p>将pubilc目录里所有文件 <code>push</code> 到刚创建的Repository的 <code>main</code> 分支。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ <span style="color:#8be9fd;font-style:italic">cd</span> public
+$ git init
+$ git remote add origin https://github.com/timeslucky/timeslucky.github.io.git
+$ git add .
+$ git commit -m <span style="color:#f1fa8c">&#34;first commit&#34;</span>
+$ git push -u origin main
+</code></pre></div><h5 id="配置-github-pages">配置 <code>Github Pages</code></h5>
+<p>点击settings-&gt;pages，配置相关信息即可。</p>
+<p>
+  <img src="https://timeslucky.oss-cn-guangzhou.aliyuncs.com/img/20220114125553.png" alt="屏幕快照 2022-01-11 下午12.17.28">
+
+</p>
+<p>我这里是自定义域名，域名需要购买或者自己申请。使用 <code>https</code> 协议，通过 <code>timeslucky.github.io</code> 进行访问。</p>
+<h5 id="申请域名">申请域名</h5>
+<p>现在已经可以通过 <code>timeslucky.github.io</code> 进行访问，如果你想通过自己定义的域名来访问，则需要申请/购买域名。免费域名后缀有限制，且没有保障，随时可以收回。这里我推荐使用付费域名。</p>
+<p>我使用的是阿里云的万网域名服务，并且是自己申请的。</p>
+<blockquote>
+<p>小插曲：申请域名时，你会发现大部分你想要的域名都已经被申请了。越想申请一个自己喜欢的，你会发现希望越落空，越烦躁😡。</p>
+</blockquote>
+<p><strong>域名解析</strong></p>
+<p>先要查看Github Pages的IP，通过ping命令参看即可。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ ping timeslucky.github.io
+PING timeslucky.github.io <span style="color:#ff79c6">(</span>185.199.108.153<span style="color:#ff79c6">)</span>: <span style="color:#bd93f9">56</span> data bytes
+<span style="color:#bd93f9">64</span> bytes from 185.199.108.153: <span style="color:#8be9fd;font-style:italic">icmp_seq</span><span style="color:#ff79c6">=</span><span style="color:#bd93f9">0</span> <span style="color:#8be9fd;font-style:italic">ttl</span><span style="color:#ff79c6">=</span><span style="color:#bd93f9">47</span> <span style="color:#8be9fd;font-style:italic">time</span><span style="color:#ff79c6">=</span>203.085 ms
+<span style="color:#bd93f9">64</span> bytes from 185.199.108.153: <span style="color:#8be9fd;font-style:italic">icmp_seq</span><span style="color:#ff79c6">=</span><span style="color:#bd93f9">1</span> <span style="color:#8be9fd;font-style:italic">ttl</span><span style="color:#ff79c6">=</span><span style="color:#bd93f9">47</span> <span style="color:#8be9fd;font-style:italic">time</span><span style="color:#ff79c6">=</span>204.260 ms
+<span style="color:#bd93f9">64</span> bytes from 185.199.108.153: <span style="color:#8be9fd;font-style:italic">icmp_seq</span><span style="color:#ff79c6">=</span><span style="color:#bd93f9">2</span> <span style="color:#8be9fd;font-style:italic">ttl</span><span style="color:#ff79c6">=</span><span style="color:#bd93f9">47</span> <span style="color:#8be9fd;font-style:italic">time</span><span style="color:#ff79c6">=</span>204.664 ms
+---
+</code></pre></div><p>然后进入阿里云控制台，点击<em>云解析DNS</em>，进行解析设置。</p>
+<p>
+  <img src="https://timeslucky.oss-cn-guangzhou.aliyuncs.com/img/20220114125600.png" alt="屏幕快照 2022-01-14 上午11.27.05">
+
+</p>
+<p>
+  <img src="https://timeslucky.oss-cn-guangzhou.aliyuncs.com/img/20220114125605.png" alt="image-20220114114008319">
+
+</p>
+<p>最后设置Github Pages，在<strong>Custom domain</strong>填上你申请的域名并保存：</p>
+<p>
+  <img src="https://timeslucky.oss-cn-guangzhou.aliyuncs.com/img/20220114125609.png" alt="屏幕快照 2022-01-14 上午11.52.46">
+
+</p>
+<p>等待几分钟就可以使用自定义域名访问Github Pages提供的页面。</p>
+<blockquote>
+<p>补充：还需在博客站点配置文件 <code>config.toml</code> 中，改baseurl为自定义的域名。</p>
+</blockquote>
+<h4 id="完成所有配置后写博客的步骤">完成所有配置后,写博客的步骤</h4>
+<p>新建博客:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ hugo new blog.md
+</code></pre></div><p>编辑博客，博客完成后。在本地预览其效果:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ hugo sever
+</code></pre></div><p>通过http://localhost:1313/预览，觉得效果还不错。最后生成静态文件，部署到Github Pages:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ hugo 
+$ <span style="color:#8be9fd;font-style:italic">cd</span> public
+$ git add .
+$ git commit -m <span style="color:#f1fa8c">&#34;my blog&#34;</span>
+$ git push -u origin main
+</code></pre></div><h4 id="heading"></h4>
+
+
+                
+                
+<div class="entry-shang text-center">
+    
+	    <p>「真诚赞赏，手留余香」</p>
+	
+	<button class="zs show-zs btn btn-bred">赞赏支持</button>
+</div>
+<div class="zs-modal-bg"></div>
+<div class="zs-modal-box">
+	<div class="zs-modal-head">
+		<button type="button" class="close">×</button>
+		<span class="author"><a href="https://hiourai.com"><img src="/img/favicon.png" />Cactus World</a></span>
+        
+	        <p class="tip"><i></i><span>真诚赞赏，手留余香</span></p>
+		
+ 
+	</div>
+	<div class="zs-modal-body">
+		<div class="zs-modal-btns">
+			<button class="btn btn-blink" data-num="2">2元</button>
+			<button class="btn btn-blink" data-num="5">5元</button>
+			<button class="btn btn-blink" data-num="10">10元</button>
+			<button class="btn btn-blink" data-num="50">50元</button>
+			<button class="btn btn-blink" data-num="100">100元</button>
+			<button class="btn btn-blink" data-num="1">任意金额</button>
+		</div>
+		<div class="zs-modal-pay">
+			<button class="btn btn-bred" id="pay-text">2元</button>
+			<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
+			<img src="/img/reward/wechat-2.png"  id="pay-image"/>
+		</div>
+	</div>
+	<div class="zs-modal-footer">
+		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
+		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
+	</div>
+</div>
+<script type="text/javascript" src="/js/reward.js"></script>
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2022/01/07/blog" data-toggle="tooltip" data-placement="top" title="Welcome to cactus blog">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+                
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href=""></a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                    
+
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+                </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Cactus World 2022
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+</body>
+</html>

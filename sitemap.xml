@@ -2,21 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://zhaohuabing.com/</loc>
+    <loc>https://hiourai.com/</loc>
+    <lastmod>2022-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hiourai.com/categories/</loc>
+    <lastmod>2022-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hiourai.com/2022/01/14/blog/</loc>
+    <lastmod>2022-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hiourai.com/post/</loc>
+    <lastmod>2022-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hiourai.com/categories/tech/</loc>
+    <lastmod>2022-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hiourai.com/2022/01/07/blog/</loc>
     <lastmod>2022-01-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://zhaohuabing.com/post/</loc>
-    <lastmod>2022-01-07T00:00:00+00:00</lastmod>
+    <loc>https://hiourai.com/blog/</loc>
+    <lastmod>2018-06-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://zhaohuabing.com/2022/01/07/blog/</loc>
-    <lastmod>2022-01-07T00:00:00+00:00</lastmod>
+    <loc>https://hiourai.com/tags/tag1/</loc>
+    <lastmod>2018-06-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://zhaohuabing.com/search/placeholder/</loc>
+    <loc>https://hiourai.com/tags/tag2/</loc>
+    <lastmod>2018-06-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://zhaohuabing.com/categories/</loc>
+    <loc>https://hiourai.com/tags/</loc>
+    <lastmod>2018-06-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://zhaohuabing.com/search/</loc>
+    <loc>https://hiourai.com/search/placeholder/</loc>
   </url><url>
-    <loc>https://zhaohuabing.com/tags/</loc>
+    <loc>https://hiourai.com/search/</loc>
   </url>
 </urlset>
